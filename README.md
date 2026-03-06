@@ -11,11 +11,11 @@ The project follows a typical **data analytics workflow** including data explora
 ---
 Dashboard Preview
 
-[Dashboard](../Dashboard)
+[Dashboard](/Dashboard)
 ---
 Insight Preview
 
-[Reports](../Insight)
+[Reports](/Reports/Insights.md)
 ---
 ## Project Objectives
 
