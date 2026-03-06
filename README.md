@@ -58,29 +58,24 @@ momo-topup-analysis/
 │   ├── data_cleaning.ipynb
 │   ├── feature_engineering.ipynb
 │   └── building_analytics_mart.ipynb
-│
-│
+|
 ├── reports/
-│   ├── figures/
-│   │   ├── revenue_by_month.png
-│   │   ├── revenue_by_merchant.png
-│   │   └── proxy_purchase_ratio.png
-│   │
-│   └── momo_topup_insights.pdf
+│   └── Reports.md
 │
 ├── dashboards/
-│   └── momo_topup_dashboard.pbix
+│       ├── Monthly_performance.png
+│       ├── User_behavior.png
+│       ├── Merchant_analysis.png
+│       ├── Visualization.pdf
+│       └── Visualization.pbix
 │
 ├── .gitignore
 └── .venv/
 ```
 
 ---
-
 ## Data Architecture
-
 The project follows a layered analytics structure:
-
 | Layer          | Description                                |
 | -------------- | ------------------------------------------ |
 | Raw Data       | Original transaction dataset               |
@@ -91,9 +86,7 @@ The project follows a layered analytics structure:
 ---
 
 ## Key Analytical Focus
-
 The analysis focuses on identifying:
-
 * **User transaction frequency**
 * **Top-up behavior patterns**
 * **Monthly transaction trends**
@@ -103,7 +96,6 @@ The analysis focuses on identifying:
 ---
 
 ## Key Metrics
-
 | Metric                    | Description                             |
 | ------------------------- | --------------------------------------- |
 | Total Transactions        | Total number of top-up transactions     |
@@ -124,9 +116,7 @@ The analysis focuses on identifying:
 ---
 
 ## Expected Insights
-
 This analysis aims to uncover:
-
 * How frequently users perform top-ups
 * Transaction distribution over time
 * Identification of high-value users
