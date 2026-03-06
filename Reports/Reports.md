@@ -1,7 +1,5 @@
-# Monthly Performance – Insight Analysis
-
 # Dashboard Insight Analysis
-
+# Monthly Performance – Insight Analysis
 ![Dashboard](../Dashboard/Monthly_performance.png)
 
 
