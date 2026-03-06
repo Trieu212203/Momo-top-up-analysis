@@ -54,11 +54,10 @@ momo-topup-analysis/
 │       ├── mart_revenue.csv
 │       └── mart_growth.csv
 ├── notebooks/
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_analysis_revenue.ipynb
-│   └── 05_building_analytics_mart.ipynb
+│   ├── data_understanding.ipynb
+│   ├── data_cleaning.ipynb
+│   ├── feature_engineering.ipynb
+│   └── building_analytics_mart.ipynb
 │
 │
 ├── reports/
@@ -72,7 +71,6 @@ momo-topup-analysis/
 ├── dashboards/
 │   └── momo_topup_dashboard.pbix
 │
-├── requirements.txt
 ├── .gitignore
 └── .venv/
 ```
@@ -120,7 +118,6 @@ The analysis focuses on identifying:
 
 * Python
 * Pandas
-* NumPy
 * Jupyter Notebook
 * Power BI
 
