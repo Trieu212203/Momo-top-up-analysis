@@ -9,7 +9,14 @@ The analysis transforms raw transaction data into structured **analytics-ready d
 The project follows a typical **data analytics workflow** including data exploration, data cleaning, feature engineering, and analytics mart construction.
 
 ---
+Dashboard Preview
 
+[Dashboard](../Dashboard)
+---
+Insight Preview
+
+[Reports](../Insight)
+---
 ## Project Objectives
 
 * Understand **user top-up behavior**
@@ -115,11 +122,5 @@ The analysis focuses on identifying:
 
 ---
 
-## Expected Insights
-This analysis aims to uncover:
-* How frequently users perform top-ups
-* Transaction distribution over time
-* Identification of high-value users
-* Behavioral patterns among different user segments
 
 ---
