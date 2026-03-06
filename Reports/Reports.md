@@ -2,7 +2,7 @@
 
 # Dashboard Insight Analysis
 
-![Dashboard](Dashboard/Monthly_performance.png)
+![Dashboard](../Dashboard/Monthly_performance.png)
 
 
 
