@@ -136,7 +136,3 @@ This analysis aims to uncover:
 * Behavioral patterns among different user segments
 
 ---
-
-## Author
-
-Duy Nguyen
