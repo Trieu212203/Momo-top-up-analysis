@@ -41,7 +41,7 @@ momo-topup-analysis/
 │   ├── raw/
 │   │   └── momo_topup_raw.xlsx
 │   │
-│   ├── processed/(đựng data đã xử lý xong)
+│   ├── processed/
 │   │   ├── transactions_clean.csv
 │   │   ├── user_info_clean.csv
 │   │   ├── commission_clean.csv
