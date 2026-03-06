@@ -35,20 +35,46 @@ The project follows a typical **data analytics workflow** including data explora
 ```
 momo-topup-analysis/
 │
-├── notebooks/
-│   ├── data_understanding.ipynb
-│   ├── data_cleaning.ipynb
-│   ├── feature_engineering.ipynb
-│   └── building_analytics_mart.ipynb
+├── [README.md]
 │
 ├── data/
-│   ├── raw
-│   └── processed
+│   ├── raw/
+│   │   └── momo_topup_raw.xlsx
+│   │
+│   ├── processed/(đựng data đã xử lý xong)
+│   │   ├── transactions_clean.csv
+│   │   ├── user_info_clean.csv
+│   │   ├── commission_clean.csv
+│   │   └── fact_topup.csv
+│   │
+│   └── Mart/
+│       ├── mart_behavior.csv
+│       ├── mart_merchant.csv
+│       ├── mart_cohort.csv
+│       ├── mart_revenue.csv
+│       └── mart_growth.csv
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_analysis_revenue.ipynb
+│   └── 05_building_analytics_mart.ipynb
 │
-├── marts/
-│   └── analytics_marts
 │
-└── README.md
+├── reports/
+│   ├── figures/
+│   │   ├── revenue_by_month.png
+│   │   ├── revenue_by_merchant.png
+│   │   └── proxy_purchase_ratio.png
+│   │
+│   └── momo_topup_insights.pdf
+│
+├── dashboards/
+│   └── momo_topup_dashboard.pbix
+│
+├── requirements.txt
+├── .gitignore
+└── .venv/
 ```
 
 ---
@@ -110,7 +136,3 @@ This analysis aims to uncover:
 * Behavioral patterns among different user segments
 
 ---
-
-## Author
-
-Duy Nguyen
