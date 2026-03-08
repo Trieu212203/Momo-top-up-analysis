@@ -33,74 +33,47 @@ The project follows a typical **data analytics workflow** including data explora
 ## Project Structure
 
 ```
-momo-topup-analysis/
+Momo case study/
 │
-├── [README.md]
+├── README.md
 │
-├── data/
+├── Data/
 │   ├── raw/
-│   │   └── momo_topup_raw.xlsx
+│   │   ├── momo_top_up.xlsx
+│   │   └── questions.xlsx
 │   │
 │   ├── processed/
-│   │   ├── transactions_clean.csv
-│   │   ├── user_info_clean.csv
-│   │   ├── commission_clean.csv
-│   │   └── fact_topup.csv
+│   │   ├── df_transactions.csv
+│   │   ├── df_users.csv
+│   │   ├── df_products.csv
+│   │   └── final.csv
 │   │
-│   └── Mart/
+│   └── mart/
 │       ├── mart_behavior.csv
 │       ├── mart_merchant.csv
 │       ├── mart_cohort.csv
 │       ├── mart_revenue.csv
 │       └── mart_growth.csv
-├── notebooks/
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_analysis_revenue.ipynb
-│   └── 05_building_analytics_mart.ipynb
 │
+├── Notebooks/
+│   ├── data_understanding.ipynb
+│   ├── data_cleaning.ipynb
+│   ├── feature_engineering.ipynb
+│   └── building_analytics_mart.ipynb
 │
-├── reports/
-│   ├── figures/
-│   │   ├── revenue_by_month.png
-│   │   ├── revenue_by_merchant.png
-│   │   └── proxy_purchase_ratio.png
-│   │
-│   └── momo_topup_insights.pdf
+├── Reports/
+│   └── Reports.md
 │
-├── dashboards/
-│   └── momo_topup_dashboard.pbix
+├── Dashboard/
+│   ├── Merchant_analysis.png
+│   ├── Monthly_performance.png
+│   ├── User_behavior.png
+│   ├── visualization.pbix
+│   └── visualization.pdf
 │
-├── requirements.txt
 ├── .gitignore
 └── .venv/
 ```
-
----
-
-## Data Architecture
-
-The project follows a layered analytics structure:
-
-| Layer          | Description                                |
-| -------------- | ------------------------------------------ |
-| Raw Data       | Original transaction dataset               |
-| Clean Data     | Data after preprocessing and validation    |
-| Feature Layer  | Engineered features for analysis           |
-| Analytics Mart | Aggregated datasets used for BI dashboards |
-
----
-
-## Key Analytical Focus
-
-The analysis focuses on identifying:
-
-* **User transaction frequency**
-* **Top-up behavior patterns**
-* **Monthly transaction trends**
-* **Revenue distribution**
-* **User segmentation**
 
 ---
 
@@ -120,19 +93,7 @@ The analysis focuses on identifying:
 
 * Python
 * Pandas
-* NumPy
 * Jupyter Notebook
 * Power BI
-
----
-
-## Expected Insights
-
-This analysis aims to uncover:
-
-* How frequently users perform top-ups
-* Transaction distribution over time
-* Identification of high-value users
-* Behavioral patterns among different user segments
 
 ---
