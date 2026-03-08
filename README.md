@@ -9,7 +9,14 @@ The analysis transforms raw transaction data into structured **analytics-ready d
 The project follows a typical **data analytics workflow** including data exploration, data cleaning, feature engineering, and analytics mart construction.
 
 ---
+Dashboard Preview
 
+[Dashboard](/Dashboard)
+---
+Insight Preview
+
+[Reports](/Reports/Insights.md)
+---
 ## Project Objectives
 
 * Understand **user top-up behavior**
@@ -54,22 +61,24 @@ Momo case study/
 │       ├── mart_cohort.csv
 │       ├── mart_revenue.csv
 │       └── mart_growth.csv
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_analysis_revenue.ipynb
+│   └── 05_building_analytics_mart.ipynb
 │
-├── Notebooks/
-│   ├── data_understanding.ipynb
-│   ├── data_cleaning.ipynb
-│   ├── feature_engineering.ipynb
-│   └── building_analytics_mart.ipynb
 │
-├── Reports/
-│   └── Reports.md
+├── reports/
+│   ├── figures/
+│   │   ├── revenue_by_month.png
+│   │   ├── revenue_by_merchant.png
+│   │   └── proxy_purchase_ratio.png
+│   │
+│   └── momo_topup_insights.pdf
 │
-├── Dashboard/
-│   ├── Merchant_analysis.png
-│   ├── Monthly_performance.png
-│   ├── User_behavior.png
-│   ├── visualization.pbix
-│   └── visualization.pdf
+├── dashboards/
+│   └── momo_topup_dashboard.pbix
 │
 ├── .gitignore
 └── .venv/
@@ -77,8 +86,32 @@ Momo case study/
 
 ---
 
-## Key Metrics
+## Data Architecture
 
+The project follows a layered analytics structure:
+
+| Layer          | Description                                |
+| -------------- | ------------------------------------------ |
+| Raw Data       | Original transaction dataset               |
+| Clean Data     | Data after preprocessing and validation    |
+| Feature Layer  | Engineered features for analysis           |
+| Analytics Mart | Aggregated datasets used for BI dashboards |
+
+---
+
+## Key Analytical Focus
+
+The analysis focuses on identifying:
+
+* **User transaction frequency**
+* **Top-up behavior patterns**
+* **Monthly transaction trends**
+* **Revenue distribution**
+* **User segmentation**
+
+---
+
+## Key Metrics
 | Metric                    | Description                             |
 | ------------------------- | --------------------------------------- |
 | Total Transactions        | Total number of top-up transactions     |
@@ -95,5 +128,16 @@ Momo case study/
 * Pandas
 * Jupyter Notebook
 * Power BI
+
+---
+
+## Expected Insights
+
+This analysis aims to uncover:
+
+* How frequently users perform top-ups
+* Transaction distribution over time
+* Identification of high-value users
+* Behavioral patterns among different user segments
 
 ---
