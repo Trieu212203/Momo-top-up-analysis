@@ -131,13 +131,6 @@ The analysis focuses on identifying:
 
 ---
 
-## Expected Insights
 
-This analysis aims to uncover:
-
-* How frequently users perform top-ups
-* Transaction distribution over time
-* Identification of high-value users
-* Behavioral patterns among different user segments
 
 ---
