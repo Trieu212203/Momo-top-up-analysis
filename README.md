@@ -122,7 +122,7 @@ The analysis focuses on identifying:
 
 ---
 
-## Tools & Technologies
+## Techstack
 
 * Python
 * Pandas
