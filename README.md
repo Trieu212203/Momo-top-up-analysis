@@ -40,48 +40,33 @@ Insight Preview
 ## Project Structure
 
 ```
-Momo case study/
+momo_topup_analysis/
 │
-├── README.md
+├── .venv/                   <- Python virtual environment (ignored in Git)
 │
-├── Data/
-│   ├── raw/
-│   │   ├── momo_top_up.xlsx
-│   │   └── questions.xlsx
-│   │
-│   ├── processed/
-│   │   ├── df_transactions.csv
-│   │   ├── df_users.csv
-│   │   ├── df_products.csv
-│   │   └── final.csv
-│   │
-│   └── mart/
-│       ├── mart_behavior.csv
-│       ├── mart_merchant.csv
-│       ├── mart_cohort.csv
-│       ├── mart_revenue.csv
-│       └── mart_growth.csv
-├── notebooks/
+├── Dashboard/               <- Power BI files and exported visuals
+│   ├── Merchant_analysis.png
+│   ├── Monthly_performance.png
+│   ├── User_behavior.png
+│   ├── visualization.pbix   <- Interactive Power BI dashboard file
+│   └── visualization.pdf    <- Exported report for quick review
+│
+├── Data/                    
+│   ├── raw/                 <- Original unstructured data
+│   ├── processed/           <- Cleaned and transformed data
+│   └── mart/                <- Final tables ready for Power BI
+│
+├── Notebooks/               <- Jupyter notebooks for ETL and EDA
 │   ├── 01_data_understanding.ipynb
 │   ├── 02_data_cleaning.ipynb
 │   ├── 03_feature_engineering.ipynb
-│   ├── 04_analysis_revenue.ipynb
-│   └── 05_building_analytics_mart.ipynb
+│   └── 04_building_analytics_mart.ipynb
 │
+├── Reports/                 <- Documentation and findings
+│   └── Insights.md          <- Detailed business insights and recommendations
 │
-├── reports/
-│   ├── figures/
-│   │   ├── revenue_by_month.png
-│   │   ├── revenue_by_merchant.png
-│   │   └── proxy_purchase_ratio.png
-│   │
-│   └── momo_topup_insights.pdf
-│
-├── dashboards/
-│   └── momo_topup_dashboard.pbix
-│
-├── .gitignore
-└── .venv/
+├── .gitignore               <- Specifies intentionally untracked files to ignore
+└── README.md                <- The top-level README for developers/viewers
 ```
 
 ---
