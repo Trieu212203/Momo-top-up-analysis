@@ -11,18 +11,15 @@ The project follows a typical **data analytics workflow** including data explora
 ---
 
 ## 💡 Key Business Insights
-*(Tóm tắt 3 kết quả phân tích quan trọng nhất từ file Insights.md của bạn vào đây. Ví dụ:)*
 * **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
-* **Transaction Behavior:** *(Điền kết quả vào đây)*
-* **Monthly Trends:** *(Điền kết quả vào đây)*
+* **Transaction Behavior:** *()*
+* **Monthly Trends:** *()*
 
 👉 *For detailed analysis and recommendations, please view the full [Insights Report](Reports/Insights.md).*
 
 ---
 
 ## 📊 Dashboard Preview
-
-*(Dưới đây là hình ảnh nhúng trực tiếp. Nếu đường dẫn đúng với thư mục của bạn, ảnh sẽ tự động hiện ra trên GitHub)*
 
 ### 1. Monthly Performance
 ![Monthly Performance](Dashboard/Monthly_performance.png)
