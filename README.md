@@ -12,8 +12,8 @@ The project follows a typical **data analytics workflow** including data explora
 
 ## 💡 Key Business Insights
 * **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
-* **Transaction Behavior:** *()*
-* **Monthly Trends:** *()*
+* **Transaction Behavior:** Identified that the average ticket size remains stable at ~51K VND, meaning overall platform growth is driven by **increasing user activity frequency** rather than larger basket sizes.
+* **Monthly Trends:** Observed seasonal peaks in transaction volume during **Q3–Q4**, suggesting a strong correlation with year-end promotional campaigns.
 
 👉 *For detailed analysis and recommendations, please view the full [Insights Report](Reports/Insights.md).*
 
