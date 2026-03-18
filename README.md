@@ -1,23 +1,38 @@
-# MoMo Top-up User Behavior Analysis
+# 📱 MoMo Top-up User Behavior Analysis
 
-## Project Overview
+## 📌 Project Overview
 
 This project analyzes **top-up transactions on the MoMo e-wallet platform** to identify **user behavior patterns and transaction trends**.
 
-The analysis transforms raw transaction data into structured **analytics-ready datasets (data marts)** to support behavioral insights and dashboard visualization.
+The analysis transforms raw transaction data into structured **analytics-ready datasets (Data Marts)** using **Python & Pandas** to support behavioral insights and interactive dashboard visualization.
 
 The project follows a typical **data analytics workflow** including data exploration, data cleaning, feature engineering, and analytics mart construction.
 
 ---
-Dashboard Preview
 
-[Dashboard](/Dashboard)
----
-Insight Preview
+## 💡 Key Business Insights
+* **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
+* **Transaction Behavior:** *()*
+* **Monthly Trends:** *()*
 
-[Reports](/Reports/Insights.md)
+👉 *For detailed analysis and recommendations, please view the full [Insights Report](Reports/Insights.md).*
+
 ---
-## Project Objectives
+
+## 📊 Dashboard Preview
+
+### 1. Monthly Performance
+![Monthly Performance](Dashboard/Monthly_performance.png)
+
+### 2. User Behavior
+![User Behavior](Dashboard/User_behavior.png)
+
+### 3. Merchant Analysis
+![Merchant Analysis](Dashboard/Merchant_analysis.png)
+
+---
+
+## 🎯 Project Objectives
 
 * Understand **user top-up behavior**
 * Identify **transaction patterns**
@@ -26,19 +41,20 @@ Insight Preview
 
 ---
 
-## Analytics Pipeline
+## 🔄 Analytics Pipeline
 
 | Stage                   | Description                                                         | Notebook                        |
 | ----------------------- | ------------------------------------------------------------------- | ------------------------------- |
-| Data Understanding      | Explore dataset structure, inspect missing values, detect anomalies | `data_understanding.ipynb`      |
-| Data Cleaning           | Handle missing values, fix inconsistencies, correct data types      | `data_cleaning.ipynb`           |
-| Feature Engineering     | Create analytical features such as revenue and behavioral metrics   | `feature_engineering.ipynb`     |
-| Analytics Mart Building | Transform processed data into datasets for visualization            | `building_analytics_mart.ipynb` |
+| Data Understanding      | Explore dataset structure, inspect missing values, detect anomalies | `01_data_understanding.ipynb`      |
+| Data Cleaning           | Handle missing values, fix inconsistencies, correct data types      | `02_data_cleaning.ipynb`           |
+| Feature Engineering     | Create analytical features such as revenue and behavioral metrics   | `03_feature_engineering.ipynb`     |
+| Analytics Mart Building | Transform processed data into dimensional datasets for visualization| `04_building_analytics_mart.ipynb` |
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
+text
 ```
 momo_topup_analysis/
 │
@@ -68,23 +84,20 @@ momo_topup_analysis/
 ├── .gitignore               <- Specifies intentionally untracked files to ignore
 └── README.md                <- The top-level README for developers/viewers
 ```
-
 ---
-
-## Data Architecture
+## 📐 Data Architecture
 
 The project follows a layered analytics structure:
 
-| Layer          | Description                                |
-| -------------- | ------------------------------------------ |
-| Raw Data       | Original transaction dataset               |
-| Clean Data     | Data after preprocessing and validation    |
-| Feature Layer  | Engineered features for analysis           |
-| Analytics Mart | Aggregated datasets used for BI dashboards |
-
+| Layer | Description |
+| :--- | :--- |
+| **Raw Data** | Original transaction dataset |
+| **Clean Data** | Data after preprocessing and validation |
+| **Feature Layer** | Engineered features for analysis |
+| **Analytics Mart** | Aggregated datasets used for BI dashboards |
 ---
 
-## Key Analytical Focus
+## 🔍 Key Analytical Focus
 
 The analysis focuses on identifying:
 
@@ -96,26 +109,18 @@ The analysis focuses on identifying:
 
 ---
 
-## Key Metrics
-| Metric                    | Description                             |
-| ------------------------- | --------------------------------------- |
-| Total Transactions        | Total number of top-up transactions     |
-| Total Revenue             | Revenue generated from transactions     |
-| Average Order Value (AOV) | Average value per transaction           |
-| Transaction Frequency     | Average number of transactions per user |
-| Active Users              | Number of users performing transactions |
+## 📈 Key Metrics
+
+| Metric | Description |
+| :--- | :--- |
+| **Total Transactions** | Total number of top-up transactions |
+| **Total Revenue** | Revenue generated from transactions |
+| **Average Order Value (AOV)** | Average value per transaction |
+| **Transaction Frequency** | Average number of transactions per user |
+| **Active Users** | Number of users performing transactions |
 
 ---
 
-## Techstack
+## 🛠️ Tech Stack
 
-* Python
-* Pandas
-* Jupyter Notebook
-* Power BI
-
----
-
-
-
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white) ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
