@@ -58,7 +58,6 @@ text
 ```
 momo_topup_analysis/
 │
-├── .venv/                   <- Python virtual environment (ignored in Git)
 │
 ├── Dashboard/               <- Power BI files and exported visuals
 │   ├── Merchant_analysis.png
