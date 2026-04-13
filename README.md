@@ -1,6 +1,6 @@
-# 📱 MoMo Top-up User Behavior Analysis
+# MoMo Top-up User Behavior Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes **top-up transactions on the MoMo e-wallet platform** to identify **user behavior patterns and transaction trends**.
 
@@ -10,16 +10,16 @@ The project follows a typical **data analytics workflow** including data explora
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 * **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
 * **Transaction Behavior:** Identified that the average ticket size remains stable at ~51K VND, meaning overall platform growth is driven by **increasing user activity frequency** rather than larger basket sizes.
 * **Monthly Trends:** Observed seasonal peaks in transaction volume during **Q3–Q4**, suggesting a strong correlation with year-end promotional campaigns.
 
-👉 *For detailed analysis and recommendations, please view the full [Insights Report](Reports/Insights.md).*
+*For detailed analysis and recommendations [Insights Report](Reports/Insights.md).*
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ### 1. Monthly Performance
 ![Monthly Performance](Dashboard/Monthly_performance.png)
@@ -32,7 +32,7 @@ The project follows a typical **data analytics workflow** including data explora
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 * Understand **user top-up behavior**
 * Identify **transaction patterns**
@@ -41,7 +41,7 @@ The project follows a typical **data analytics workflow** including data explora
 
 ---
 
-## 🔄 Analytics Pipeline
+## Analytics Pipeline
 
 | Stage                   | Description                                                         | Notebook                        |
 | ----------------------- | ------------------------------------------------------------------- | ------------------------------- |
@@ -52,7 +52,7 @@ The project follows a typical **data analytics workflow** including data explora
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 text
 ```
@@ -83,7 +83,7 @@ momo_topup_analysis/
 └── README.md                <- The top-level README for developers/viewers
 ```
 ---
-## 📐 Data Architecture
+## Data Architecture
 
 The project follows a layered analytics structure:
 
@@ -95,7 +95,7 @@ The project follows a layered analytics structure:
 | **Analytics Mart** | Aggregated datasets used for BI dashboards |
 ---
 
-## 🔍 Key Analytical Focus
+## Key Analytical Focus
 
 The analysis focuses on identifying:
 
@@ -107,7 +107,7 @@ The analysis focuses on identifying:
 
 ---
 
-## 📈 Key Metrics
+## Key Metrics
 
 | Metric | Description |
 | :--- | :--- |
@@ -119,6 +119,6 @@ The analysis focuses on identifying:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white) ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
