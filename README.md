@@ -1,125 +1,144 @@
-# 📱 MoMo Top-up User Behavior Analysis
+# MoMo Top-up User Behavior Analysis
 
-## 📌 Project Overview
+## Project Overview
 
-This project analyzes **top-up transactions on the MoMo e-wallet platform** to identify **user behavior patterns and transaction trends**.
+This project analyzes **MoMo top-up transactions** to understand **user behavior, transaction patterns, and revenue distribution**.
 
-The analysis transforms raw transaction data into structured **analytics-ready datasets (Data Marts)** using **Python & Pandas** to support behavioral insights and interactive dashboard visualization.
+Instead of focusing only on high-level KPIs, the analysis is driven by **business questions**, aiming to explain:
+- What drives transaction growth?
+- How users distribute spending across top-up amounts?
+- Where revenue concentration comes from?
 
-The project follows a typical **data analytics workflow** including data exploration, data cleaning, feature engineering, and analytics mart construction.
-
----
-
-## 💡 Key Business Insights
-* **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
-* **Transaction Behavior:** Identified that the average ticket size remains stable at ~51K VND, meaning overall platform growth is driven by **increasing user activity frequency** rather than larger basket sizes.
-* **Monthly Trends:** Observed seasonal peaks in transaction volume during **Q3–Q4**, suggesting a strong correlation with year-end promotional campaigns.
-
-👉 *For detailed analysis and recommendations, please view the full [Insights Report](Reports/Insights.md).*
+The project transforms raw data into **analytics-ready data marts** using **Python (Pandas)**, designed for **Power BI visualization and business storytelling**.
 
 ---
 
-## 📊 Dashboard Preview
+## Business Objectives
 
-### 1. Monthly Performance
-![Monthly Performance](Dashboard/Monthly_performance.png)
+The analysis is structured around key business problems:
+
+- Understand how users behave when topping up  
+- Identify drivers of growth (frequency vs. transaction value)  
+- Analyze revenue concentration across users and amount tiers  
+- Evaluate distribution of top-up amounts  
+- Support data-driven storytelling via dashboards  
+
+---
+
+## Key Business Insights
+
+- **Revenue Concentration:** A small group of users contributes a disproportionately large share of revenue → strong dependency on high-value users  
+- **Stable Ticket Size:** Average top-up amount remains relatively stable → growth is mainly driven by **transaction frequency**, not basket size  
+- **Amount Distribution:** Transactions are heavily concentrated in fixed denominations (10K, 20K, 50K, 100K) → reflects strong user habits and product design influence  
+- **Seasonality:** Transaction volume increases toward year-end → likely driven by campaigns and seasonal demand  
+
+Detailed explanation is provided in the Insights Report.
+
+---
+
+## Key Analytical Questions
+
+### 1. Growth Drivers
+- Is revenue growth driven by more users, higher frequency, or higher spending per transaction?
+- Are users becoming more active over time?
 
 ### 2. User Behavior
-![User Behavior](Dashboard/User_behavior.png)
+- How frequently do users top up?
+- Are there distinct behavioral segments?
 
-### 3. Merchant Analysis
-![Merchant Analysis](Dashboard/Merchant_analysis.png)
+### 3. Amount Distribution
+- Which top-up amounts dominate transaction volume?
+- Do users prefer fixed denominations?
+- How does each amount contribute to:
+  - % of transactions
+  - % of revenue
 
----
+### 4. Revenue Concentration
+- How concentrated is revenue across users?
+- Do a small number of users drive most of the revenue?
 
-## 🎯 Project Objectives
-
-* Understand **user top-up behavior**
-* Identify **transaction patterns**
-* Analyze **monthly transaction performance**
-* Build **analytics datasets for dashboard visualization**
-
----
-
-## 🔄 Analytics Pipeline
-
-| Stage                   | Description                                                         | Notebook                        |
-| ----------------------- | ------------------------------------------------------------------- | ------------------------------- |
-| Data Understanding      | Explore dataset structure, inspect missing values, detect anomalies | `01_data_understanding.ipynb`      |
-| Data Cleaning           | Handle missing values, fix inconsistencies, correct data types      | `02_data_cleaning.ipynb`           |
-| Feature Engineering     | Create analytical features such as revenue and behavioral metrics   | `03_feature_engineering.ipynb`     |
-| Analytics Mart Building | Transform processed data into dimensional datasets for visualization| `04_building_analytics_mart.ipynb` |
+### 5. Monthly Trends
+- How do transactions and revenue evolve over time?
+- Are there seasonal or campaign-driven spikes?
 
 ---
 
-## 🗂️ Project Structure
+## Analytics Approach
 
-text
+The project follows a **data mart-driven approach**, where each mart answers a specific business question:
+
+- **User Mart** → user behavior & frequency  
+- **Monthly Mart** → growth trends  
+- **Amount Distribution Mart** → transaction & revenue distribution by top-up value  
+- **Revenue Distribution Mart** → concentration analysis  
+
+All marts are optimized for **Power BI dashboards**.
+
+---
+
+## Analytics Pipeline
+
+| Stage | Description | Notebook |
+|------|------------|----------|
+| Data Understanding | Explore structure, detect anomalies | `01_data_understanding.ipynb` |
+| Data Cleaning | Fix missing values, standardize data | `02_data_cleaning.ipynb` |
+| Feature Engineering | Create behavioral & revenue features | `03_feature_engineering.ipynb` |
+| Analytics Mart | Build datasets for BI & analysis | `04_building_analytics_mart.ipynb` |
+
+---
+
+## Project Structure
 ```
 momo_topup_analysis/
 │
+├── Dashboard/
+│ ├── visualization.pbix
+│ └── visualization.pdf
 │
-├── Dashboard/               <- Power BI files and exported visuals
-│   ├── Merchant_analysis.png
-│   ├── Monthly_performance.png
-│   ├── User_behavior.png
-│   ├── visualization.pbix   <- Interactive Power BI dashboard file
-│   └── visualization.pdf    <- Exported report for quick review
+├── Data/
+│ ├── raw/
+│ ├── processed/
+│ └── mart/
 │
-├── Data/                    
-│   ├── raw/                 <- Original unstructured data
-│   ├── processed/           <- Cleaned and transformed data
-│   └── mart/                <- Final tables ready for Power BI
+├── Notebooks/
+│ ├── 01_data_understanding.ipynb
+│ ├── 02_data_cleaning.ipynb
+│ ├── 03_feature_engineering.ipynb
+│ └── 04_building_analytics_mart.ipynb
 │
-├── Notebooks/               <- Jupyter notebooks for ETL and EDA
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   └── 04_building_analytics_mart.ipynb
+├── Reports/
+│ └── Insights.md
 │
-├── Reports/                 <- Documentation and findings
-│   └── Insights.md          <- Detailed business insights and recommendations
-│
-├── .gitignore               <- Specifies intentionally untracked files to ignore
-└── README.md                <- The top-level README for developers/viewers
+└── README.md
 ```
----
-## 📐 Data Architecture
 
-The project follows a layered analytics structure:
+---
+
+## Data Architecture
 
 | Layer | Description |
-| :--- | :--- |
-| **Raw Data** | Original transaction dataset |
-| **Clean Data** | Data after preprocessing and validation |
-| **Feature Layer** | Engineered features for analysis |
-| **Analytics Mart** | Aggregated datasets used for BI dashboards |
----
-
-## 🔍 Key Analytical Focus
-
-The analysis focuses on identifying:
-
-* **User transaction frequency**
-* **Top-up behavior patterns**
-* **Monthly transaction trends**
-* **Revenue distribution**
-* **User segmentation**
+|------|------------|
+| Raw Data | Original transaction data |
+| Clean Data | Preprocessed & validated data |
+| Feature Layer | Behavioral & revenue features |
+| Analytics Mart | Aggregated datasets for BI |
 
 ---
 
-## 📈 Key Metrics
+## Core Metrics
 
-| Metric | Description |
-| :--- | :--- |
-| **Total Transactions** | Total number of top-up transactions |
-| **Total Revenue** | Revenue generated from transactions |
-| **Average Order Value (AOV)** | Average value per transaction |
-| **Transaction Frequency** | Average number of transactions per user |
-| **Active Users** | Number of users performing transactions |
+- Total Transactions  
+- Total Revenue  
+- Average Order Value (AOV)  
+- Transactions per User  
+- Active Users  
+
+> Metrics are used to support analysis, not as the final output.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white) ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+- Python (Pandas)  
+- Jupyter Notebook  
+- Power BI  
