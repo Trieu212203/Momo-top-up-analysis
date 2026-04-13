@@ -10,10 +10,15 @@ The project follows a typical **data analytics workflow** including data explora
 
 ---
 
-##  Key Business Insights
-* **Revenue Concentration:** Discovered that the **top 20% of users contributed 65% of the total revenue**, highlighting a strong reliance on high-value customers.
-* **Transaction Behavior:** Identified that the average ticket size remains stable at ~51K VND, meaning overall platform growth is driven by **increasing user activity frequency** rather than larger basket sizes.
-* **Monthly Trends:** Observed seasonal peaks in transaction volume during **Q3–Q4**, suggesting a strong correlation with year-end promotional campaigns.
+## Key Business Insights
+
+* **Revenue Concentration:** The top 20% of users contribute approximately 65% of total revenue, indicating a strong dependence on a small group of high-value customers.
+
+* **Business Model Insight:** The average transaction value remains stable at ~51K VND, suggesting a **high frequency – low value** model, where growth is primarily driven by increasing user activity rather than higher basket size.
+
+* **Transaction Amount Pattern:** Transaction values show clear spikes at specific price points (e.g., 10K, 20K, 50K, 100K), indicating structured top-up behavior likely influenced by predefined pricing options or user preference for rounded amounts.
+
+* **Seasonal & External Impact:** Transaction volume shows a noticeable decline in Q1–Q2 2020, followed by strong growth in Q3–Q4. This trend may be associated with the impact of COVID-19, where initial disruption reduced activity, while later periods saw increased digital payment adoption as the pandemic intensified.
 
 *For detailed analysis and recommendations [Insights Report](Reports/Insights.md).*
 
